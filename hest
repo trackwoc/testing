@@ -8,7 +8,7 @@ zpiLib:MakeNotification({
 })
 
 
-local Window = zpiLib:MakeWindow({Name = "Orion Example", HidePremium = false, SaveConfig = true, ConfigFolder = "Orion"})
+local Window = zpiLib:MakeWindow({Name = "6zpi preemie", HidePremium = false, SaveConfig = true, ConfigFolder = "6zpi"})
 
 --Player Tab--
 
