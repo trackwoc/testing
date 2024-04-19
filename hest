@@ -1,6 +1,6 @@
-local 6zpiLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local zpiLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-6zpiLib:MakeNotification({
+zpiLib:MakeNotification({
 	Name = "6zi premium ",
 	Content = "6zpi",
 	Image = "rbxassetid://17183484236",
@@ -8,7 +8,7 @@ local 6zpiLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shle
 })
 
 
-local Window = 6zpiLib:MakeWindow({Name = "6zpi", HidePremium = false, SaveConfig = true, ConfigFolder = "6zpi"})
+local Window = zpiLib:MakeWindow({Name = "6zpi", HidePremium = false, SaveConfig = true, ConfigFolder = "6zpi"})
 
 --Player Tab--
 
