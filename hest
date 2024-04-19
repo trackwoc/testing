@@ -1,0 +1,62 @@
+local 6zpiLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+6zpiLib:MakeNotification({
+	Name = "6zi premium ",
+	Content = "6zpi",
+	Image = "rbxassetid://17183484236",
+	Time = 5
+})
+
+
+local Window = 6zpiLib:MakeWindow({Name = "6zpi", HidePremium = false, SaveConfig = true, ConfigFolder = "6zpi"})
+
+--Player Tab--
+
+local PlayerTab = Window:MakeTab({
+	Name = "Player",
+	Icon = "rbxassetid://17183484236",
+	PremiumOnly = false
+})
+
+local PlayerSection = PlayerTab:AddSection({
+	Name = "Player"
+})
+
+
+PlayerSection:AddSlider({
+	Name = "Walkspeed",
+	Min = 16,
+	Max = 100,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Walkspeed",
+	Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end    
+})
+
+--Player Tab End--
+
+--Settings Tab--
+
+local SettingsTab = Window:MakeTab({
+	Name = "Settings",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local SettingsSection = SettingsTab:AddSection({
+	Name = "Settings"
+})
+
+SettingsSection:AddButton({
+	Name = "Destroy UI",
+	Callback = function()
+        OrionLib:Destroy()
+  	end    
+})
+
+--Settings End--
+
+OrionLib:Init() --UI Lib End
