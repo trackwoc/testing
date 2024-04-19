@@ -8,35 +8,29 @@ zpiLib:MakeNotification({
 })
 
 
-local Window = zpiLib:MakeWindow({Name = "6zpi preemie", HidePremium = false, SaveConfig = true, ConfigFolder = "6zpi"})
+local Window = zpiLib:MakeWindow({Name = "6zpi premium", HidePremium = false, SaveConfig = true, ConfigFolder = "6zpi"})
 
 --Player Tab--
 
 local PlayerTab = Window:MakeTab({
-	Name = "Player",
+	Name = "6zpi",
 	Icon = "rbxassetid://17183484218",
 	PremiumOnly = false
 })
 
 local PlayerSection = PlayerTab:AddSection({
-	Name = "Player"
+	Name = "scripts"
 })
 
 
-PlayerSection:AddSlider({
-	Name = "Walkspeed",
-	Min = 16,
-	Max = 100,
-	Default = 5,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "Walkspeed",
-	Callback = function(Value)
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-	end    
+local Button = Tab:CreateButton({
+   Name = "Button Example",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   end,
 })
 
---Player Tab End--
+--scripts--
 
 --Settings Tab--
 
