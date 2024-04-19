@@ -1,14 +1,14 @@
-local zpiLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-zpiLib:MakeNotification({
-	Name = "6zi premium ",
-	Content = "6zpi",
+OrionLib:MakeNotification({
+	Name = "6zpi premium",
+	Content = "6zpi on discord",
 	Image = "rbxassetid://17183484236",
 	Time = 5
 })
 
 
-local Window = zpiLib:MakeWindow({Name = "6zpi", HidePremium = false, SaveConfig = true, ConfigFolder = "6zpi"})
+local Window = OrionLib:MakeWindow({Name = "Orion Example", HidePremium = false, SaveConfig = true, ConfigFolder = "Orion"})
 
 --Player Tab--
 
