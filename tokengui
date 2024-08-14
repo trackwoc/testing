@@ -6,7 +6,7 @@ local localPlayer    = players.LocalPlayer
 local mouse          = localPlayer:GetMouse()
 
 local library = {
-    cheatname = "Token.cc";
+    cheatname = "🦇 made by me";
     colorpicking = false;
     tabbuttons = {};
     tabs = {};
