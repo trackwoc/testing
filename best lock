@@ -1,6 +1,6 @@
 getgenv().Prediction = 0.126719834	
 getgenv().AimPart = "LowerTorso"	
-getgenv().Key = "Q"	-- Change this to whatever bind u want
+getgenv().Key = "C"	-- Change this to whatever bind u want
 getgenv().DisableKey = "P"	
 	
 getgenv().FOV = true	
